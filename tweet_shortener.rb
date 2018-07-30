@@ -22,6 +22,9 @@ end
 # Method for finding all of the long dictionary keys in tweets and replacing those found words with their coresponding dictionary values
 def word_substituter(tweet)
   tweet_array = tweet.split(" ")
+  tweet_array.collect! do |word|
+    dictionary(word)
+  end
 end
 
 # Test Data:
