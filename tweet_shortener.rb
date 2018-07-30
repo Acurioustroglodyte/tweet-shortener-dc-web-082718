@@ -54,7 +54,6 @@ def shortened_tweet_truncator(tweet)
   if twit.size > 140
     twit[0..136]
     twit << "..."
-    puts twit
     return twit
   end
   return tweet
