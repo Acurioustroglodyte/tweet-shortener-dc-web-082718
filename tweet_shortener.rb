@@ -25,6 +25,7 @@ end
 # Method for finding all of the long dictionary keys in tweets and replacing those found words with their coresponding dictionary values
 def word_substituter(tweet)
   tweet_array = tweet.split(" ")
+  puts tweet_array
   tweet_array.collect! do |word|
     dictionary(word)
   end
@@ -34,7 +35,7 @@ end
 # Method for iterating through an array of tweets and printing each after substituting words
 def bulk_tweet_shortener(tweet_storm)
   tweet_storm.each do |twit|
-    puts word_substituter(twit)
+    word_substituter(twit)
     # Error: All words but "for" and being changed
   end
 end
