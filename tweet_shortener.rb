@@ -37,3 +37,8 @@ def bulk_tweet_shortener(tweet_storm)
     puts word_substituter(twit)
   end
 end
+
+# Shorten tweets that are more than 140 characters
+def selective_tweet_shortener(tweet)
+  if tweet.size > 140
+end
