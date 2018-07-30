@@ -36,5 +36,5 @@ def bulk_tweet_shortener(tweet_array)
     dictionary(word)
   end
   tweet_arr.join(" ")
-
+  puts tweet_arr
 end
