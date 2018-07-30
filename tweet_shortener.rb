@@ -49,6 +49,6 @@ end
 
 # Truncate tweets over 140 characters with an ellipses (...) after shortening them
 def shortened_tweet_truncator(tweet)
-  tweet = selective_tweet_truncator(tweet)
+  tweet = selective_tweet_shortener(tweet)
   puts tweet
 end
