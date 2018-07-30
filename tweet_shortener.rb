@@ -50,6 +50,7 @@ end
 # Truncate tweets over 140 characters with an ellipses (...) after shortening them
 def shortened_tweet_truncator(tweet)
   twit = selective_tweet_shortener(tweet)
+  puts twit
   if twit.size > 140
     twit.slice!(0..137)
     twit << "..."
