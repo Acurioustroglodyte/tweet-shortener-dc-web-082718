@@ -34,4 +34,5 @@ end
 def bulk_tweet_shortener(tweet_storm)
   puts tweet_storm.each do |twit|
     word_substituter(twit)
+  end
 end
