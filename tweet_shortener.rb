@@ -30,11 +30,8 @@ def word_substituter(tweet)
   tweet_array.join(" ")
 end
 
-def bulk_tweet_shortener(tweet_array)
-  tweet_arr = tweet_array
-  tweet_arr.collect! do |word|
-    dictionary(word)
-  end
-  tweet_arr = tweet_arr.join(" ")
-  puts tweet_arr
+# Method for iterating through an array of tweets and printing each after substituting words
+def bulk_tweet_shortener(tweet_storm)
+  puts tweet_storm.each do |twit|
+    word_substituter(twit)
 end
