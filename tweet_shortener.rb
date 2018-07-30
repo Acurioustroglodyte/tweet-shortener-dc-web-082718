@@ -51,7 +51,7 @@ end
 def shortened_tweet_truncator(tweet)
   twit = selective_tweet_shortener(tweet)
   if twit.size > 140
-    puts twit.slice!(0..137)
+    puts twit.slice!(0..136)
     twit << "..."
   end
   twit
