@@ -20,6 +20,7 @@ def dictionary(word)
   end
   word
 end
+
 # Method for finding all of the long dictionary keys in tweets and replacing those found words with their coresponding dictionary values
 def word_substituter(tweet)
   tweet_array = tweet.split(" ")
@@ -29,8 +30,6 @@ def word_substituter(tweet)
   tweet_array.join(" ")
 end
 
-# Test Data:
-tweet_one = "Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!"
-
-#Test Call:
-puts word_substituter(tweet_one)
+def bulk_tweet_shortener(tweet_arr)
+  puts word_substituter(tweet_arr)
+end
