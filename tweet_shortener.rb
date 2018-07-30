@@ -15,7 +15,7 @@ def dictionary(word)
     "and" => "&",
   }
   substitutes.keys.each do |key|
-    if key == word
+    if key == word.downcase
       return substitutes[key]
     end
   end
