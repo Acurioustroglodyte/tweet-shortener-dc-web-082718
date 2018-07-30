@@ -35,5 +35,6 @@ def bulk_tweet_shortener(tweet_array)
   tweet_arr.collect! do |word|
     dictionary(word)
   end
-  tweet_arr.join(" ")
+  tweet_arr = tweet_arr.join(" ")
+  puts tweet_arr
 end
