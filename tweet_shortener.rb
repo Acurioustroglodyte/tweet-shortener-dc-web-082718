@@ -34,5 +34,6 @@ end
 def bulk_tweet_shortener(tweet_storm)
   tweet_storm.each do |twit|
     puts word_substituter(twit)
+    # Error: All words but "for" and being changed
   end
 end
