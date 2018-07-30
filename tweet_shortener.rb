@@ -13,16 +13,13 @@ def dictionary(word)
     "at" => "@",
     "and" => "&",
   }
-  "hello" becomes 'hi'
-  "to, two, too" become '2'
-  "for, four" become '4'
-  'be' becomes 'b'
-  'you' becomes 'u'
-  "at" becomes "@"
-  "and" becomes "&"
+  substitutes.keys.each do |key|
+    if key == word
+      return substitutes[key]
+end
 # Method for finding all of the long dictionary keys in tweets and replacing those found words with their coresponding dictionary values
 def word_substituter(tweet)
-  puts tweet
+  
 end
 
 # Test Data:
