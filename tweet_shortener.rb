@@ -25,6 +25,7 @@ def word_substituter(tweet)
   tweet_array.collect! do |word|
     dictionary(word)
   end
+  tweet_array
 end
 
 # Test Data:
