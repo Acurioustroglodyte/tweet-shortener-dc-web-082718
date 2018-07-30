@@ -32,7 +32,7 @@ end
 
 # Method for iterating through an array of tweets and printing each after substituting words
 def bulk_tweet_shortener(tweet_storm)
-  puts tweet_storm.each do |twit|
-    word_substituter(twit)
+  tweet_storm.each do |twit|
+    puts word_substituter(twit)
   end
 end
