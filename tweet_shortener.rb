@@ -16,10 +16,12 @@ def dictionary(word)
   substitutes.keys.each do |key|
     if key == word
       return substitutes[key]
+    end
+  end
 end
 # Method for finding all of the long dictionary keys in tweets and replacing those found words with their coresponding dictionary values
 def word_substituter(tweet)
-  
+
 end
 
 # Test Data:
