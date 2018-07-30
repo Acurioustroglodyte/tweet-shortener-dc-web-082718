@@ -38,11 +38,16 @@ def bulk_tweet_shortener(tweet_storm)
   end
 end
 
-# Shorten tweets that are more than 140 characters
+# Shorten tweets that are more than 140 characters, else return the tweet
 def selective_tweet_shortener(tweet)
   if tweet.length > 140
     word_substituter(tweet)
   else
     return tweet
   end
+end
+
+# Truncate tweets over 140 characters with an ellipses (...) after shortening them
+def shortened_tweet_truncator(tweet)
+  
 end
