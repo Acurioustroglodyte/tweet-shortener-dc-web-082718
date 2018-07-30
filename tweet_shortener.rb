@@ -18,6 +18,7 @@ def dictionary(word)
       return substitutes[key]
     end
   end
+  word
 end
 # Method for finding all of the long dictionary keys in tweets and replacing those found words with their coresponding dictionary values
 def word_substituter(tweet)
